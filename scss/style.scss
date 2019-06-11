@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap");
+
+$font-family-base: 'Montserrat', sans-serif;
+$primary: #1897F2;
+$light: #ced4da;
+
+.form-control {
+    &:focus {
+       box-shadow: none !important;
+       /* your new styles */
+       border: 1px solid $primary;
+    } 
+  }
+
+.navbar.scrolled {
+    background: rgba(255,255,255,0.4);
+    transition: background 200ms;
+}
+
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss"

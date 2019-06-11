@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Gan Cube</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js" async></script>
+    
+<body>
+    <div class="container">
+        <header id="header">
+            <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="nav-bar">
+                <a class="navbar-brand" href="#"><img id="header-img" src="img/default-logo.png" alt="" width="36" height="40"><span>  GAN</span></a>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent20">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#products">Products</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#accessories">Accessories</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#world-record">World record</a>
+                        </li>
+                    </ul>
+                </div>   
+            </nav>
+        </header>
+        <main style="margin-top: 7rem;">
+            <section id="emails">
+                <div class="row justify-content-sm-center">
+                    <div class="col-sm-auto">
+                        <h4 class="text-center"><strong>Cube with smallest deform</strong></h4>
+                        <form class="form-inline justify-content-sm-center" id="form" action="https://www.freecodecamp.com/email-submit">
+                            <input name="email" type="email" id="email" class="form-control col-sm-8 mb-2 mr-sm-2" placeholder="Your email">
+                            <input class="col-sm-3 btn btn-primary mb-2 shadow-none" type="submit" value="Submit" id="submit">
+                        </form>
+                    </div>
+                </div>
+            </section>
+            <section id="products" style="margin-top: 5rem;">
+                    <div class="card text-center border-0">
+                        <img src="img/gan249.png" class="card-img" alt="...">
+                        <div class="card-img-overlay">
+                            <div class="card-content">
+                                <h4 class="card-title" style="margin:0;"><strong>Just a 2x2</strong></h4>
+                                <p class="card-text">Full-fitted tiles, light and beautiful</p>
+                                <div class="btn-area">
+                                    <a href="#" class="btn btn-light bg-transparent shadow-none">Learn more</a>
+                                    <a href="#" class="btn btn-primary shadow-none">Buy</a>
+                                </div>
+                               
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card text-center border-0 mt-4">
+                        <img src="img/gan356.png" class="card-img" alt="...">
+                        <div class="card-img-overlay">
+                            <div class="card-content">
+                                <h4 class="card-title" style="margin:0;"><strong>Gan356 X</strong></h4>
+                                <p class="card-text">Reinvents the Magnet System</p>
+                                <a href="#" class="btn btn-light bg-transparent shadow-none">Learn more</a>
+                                <a href="#" class="btn btn-primary shadow-none">Buy</a>
+                            </div>
+                        </div>
+                    </div>
+            </section>
+            <section id="accessories" style="margin-top: 2rem;">
+                <div class="text-center">
+                    <h4 style="margin: 0"><strong>Accessories</strong></h4>
+                    <p>Go further and beyond</p>
+                </div>
+                <div class="row mb-4">
+                    <div class="col-4">
+                        <div class="card border-0">
+                            <img src="img/angstrom.png" class="card-img" alt="">
+                        </div>  
+                    </div>
+                    <div class="col-4">
+                        <div class="card border-0"><img class="card-img" src="img/CubeSmith.png"></div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card border-0"><img src="img/lubix.png" class="card-img" alt=""></div>
+                    </div>
+                </div>
+            </section>
+            <section id="world-record" style="margin-top: 5rem;">
+                <div class="text-center" style="margin-bottom: 2rem">
+                    <h4 style="margin: 0"><strong>World record</strong></h4>
+                    <p>By champions, for champions</p>
+                </div>
+                <div class="row">
+                    <iframe id="video" class="col-sm-12" src="https://www.youtube.com/embed/40XmeKr1X0Y" height="600" frameborder="0"></iframe>
+                </div>
+            </section>
+        </main> 
+        <footer style="margin-top: 2.5rem;">
+            <div class="text-center">
+                <p>Copyright 2019</p>
+            </div>
+        </footer>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script>
+        $(function () {
+            $(document).scroll(function () {
+                var $nav = $("#nav-bar");
+                $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
+            });
+        });
+    </script>   
+</body>
+</html>
