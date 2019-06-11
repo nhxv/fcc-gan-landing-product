@@ -34,8 +34,8 @@ User Story #14: My product landing page should have at least one media query.
 
 User Story #15: My product landing page should utilize CSS flexbox at least once.
 
-###Built with
+### Built with
 HTML, CSS, Javascript, jQuery, Bootstrap, SASS
 
-###Licenses
+### Licenses
 Inspired by https://www.gancube.com/
